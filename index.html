@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan's Plinko</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juan's Plinko</h1>
+        <p>Balance: $<span id="balance">100</span></p>
+        <label for="bet">Bet Amount ($):</label>
+        <input type="number" id="bet" min="1" max="100" value="10">
+        <button onclick="playPlinko()">Drop Ball</button>
+        <canvas id="plinkoCanvas" width="600" height="400"></canvas>
+        <p id="result"></p>
+        <button onclick="resetGame()">Reset Balance to $100</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
